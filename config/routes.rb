@@ -7,6 +7,4 @@ Rails.application.routes.draw do
   # the route, we'll keep it explicit for now and refactor later.
   get "students/:id", to: "students#show"
 
-  resources :posts, only: [:index, :show]
-  get '/register', to: 'users#new', as: 'register'
 end
