@@ -7,6 +7,8 @@ class StudentsController < ApplicationController
 
   def activate
     set_student.active_toggle
+    @student.save
+    redirect_to student_path(@student)
   end
 
   def show
