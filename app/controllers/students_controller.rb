@@ -6,7 +6,8 @@ class StudentsController < ApplicationController
   end
 
   def activate
-  end  
+    set_student.active_toggle
+  end
 
   def show
   end
