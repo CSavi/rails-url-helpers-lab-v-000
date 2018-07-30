@@ -1,5 +1,5 @@
 class AddActivateToStudents < ActiveRecord::Migration
   def change
-    add_column :activate, :boolean, default
+    add_column :students, :active, :boolean, default: :false 
   end
 end
